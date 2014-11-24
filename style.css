@@ -1,0 +1,282 @@
+@font-face {
+    font-family: '1942_report1942_report';
+    src: url('1942-webfont.eot');
+    src: url('1942-webfont.eot?#iefix') format('embedded-opentype'),
+         url('1942-webfont.woff2') format('woff2'),
+         url('1942-webfont.woff') format('woff'),
+         url('1942-webfont.ttf') format('truetype'),
+         url('1942-webfont.svg#1942_report1942_report') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'alegreya_scbold';
+    src: url('alegreyasc-bold-webfont.eot');
+    src: url('alegreyasc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alegreyasc-bold-webfont.woff2') format('woff2'),
+         url('alegreyasc-bold-webfont.woff') format('woff'),
+         url('alegreyasc-bold-webfont.ttf') format('truetype'),
+         url('alegreyasc-bold-webfont.svg#alegreya_scbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bearpawregular';
+    src: url('bearpaw_-webfont.eot');
+    src: url('bearpaw_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bearpaw_-webfont.woff2') format('woff2'),
+         url('bearpaw_-webfont.woff') format('woff'),
+         url('bearpaw_-webfont.ttf') format('truetype'),
+         url('bearpaw_-webfont.svg#bearpawregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	background: url('images/background.png');
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}	
+
+#bloc_page
+{
+    width:900px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1280px)
+{
+	#bloc_page
+	{
+		width:auto;
+	}	
+}
+
+section h1, footer h1, nav a
+{
+    font-family: alegreya_scbold, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+}
+
+#titre_principal
+{
+    display: inline-block;
+}
+
+header h1
+{
+    font-family: 'alegreya_scbold', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo, header h1
+{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+
+header h2
+{
+    font-family: alegreya_scbold, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+
+nav
+{
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+@media all and (max - width : 1024px )
+{
+	nav
+	{
+		 width : auto ;
+		 text - align : left ;
+	}
+   nav li
+   {
+	  display : block ;
+	  padding - left : 4px;
+  }
+ 
+  nav a
+   {
+      font - size : 1.1em;
+  }
+ 
+  nav a: hover
+   {
+     border - bottom : 0;
+  }
+}
+
+	
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+
+article p
+{
+    font-size:1em;
+}
+
+aside, #login, #titre_principal, #vote_results 
+{
+    position: relative;
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+aside img
+{
+    margin-right: 5px;
+}
+
+ @media all and (max - width : 1024px )
+ {
+	 article , aside
+	 {
+	 width : auto ;
+	 display : block ;
+	 margin - bottom : 15px ;
+	 }
+  
+	 aside p:last - child
+	 {
+	 text - align : center ;
+	 }
+}
+
+/* Footer */
+
+footer
+{
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+ #vote_results 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#vote_results ul 
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul
+{
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1, .ie8 section h1
+{
+    font-size: 1.1em;
+}
+
+.old_ie footer div, .ie8 footer div
+{
+    margin-top: 30px;
+    background: url('images/separateur.png') repeat-x top;
+}
+
+	
