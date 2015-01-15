@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+		<link rel=" stylesheet " media =" screen and (max - width : 1280px )" href =" petite_resolution .css" />
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<meta charset="utf-8" />
+        <title>Middleware</title>
+
+        <!-- MY CSS -->
+        <link rel="stylesheet" href="styles/main.css">
+
+
+        <!-- BOOTSRAP -->
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">   
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <title>ALPHA</title>
+    </head>
+	<body>
+			<header>
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="#">Brand</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					  <ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						  </ul>
+						</li>
+					  </ul>
+					  <form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+						  <input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					  </form>
+					  <ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						  <ul class="dropdown-menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						  </ul>
+						</li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</header>
+				<!-- Panel for the login -->
+				<div class="container" style="margin-top:30px">
+					<div class="col-md-5">
+						<div class="panel panel-default">
+							<div class="panel-heading"><h3 class="panel-title"><strong>Sign In </strong></h3>
+							</div>
+						<div class="panel-body">
+						<form role="form">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Username</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter login">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+							</div>
+							<button type="button" class="btn btn-success">Login</button>
+						</form>
+					 </div>
+				</div>
+				</div>
+
+
+				<!-- Panel for the Sign up -->
+				<div class="col-md-5 col-md-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><strong>Sign Up</strong></h3>
+						</div>
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Login</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter login">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">re-Password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password again">
+								</div>
+								<div lass="form-group">
+								<label for="exampleInputPassword1">Coountry</label>
+								<select class="form-control">
+									<optgroup label="Europ">
+										<option value="france">FRANCE selected</option>
+										<option value="germany">GERMANY</option>
+										<option value="spain">SPAIN</option>
+										<option value="italy">ITALY</option>
+									</optgroup>
+									<optgroup label="Africa"
+										<option value="maroc">MAROC</option>
+										<option value="togo">TOGO</option>
+										<option value="senegal">SENEGAL</option>
+										<option value="south africa">S.AFRICA</option>
+									</optgroup>
+									<optgroup label="N.America">
+										<option value="france">CANADA</option>
+										<option value="france">USA</option>
+										<option value="france">MEXICO</option>
+									</optgroup>
+									<optgroup label="Asia">
+										<option value="saudi arabia">KSA</option>
+										<option value="japan">JAPAN</option>
+										<option value=" china">CHINA</option>
+										<option value="south korea">S.Korea</option>
+									</optgroup>
+								</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Email</label>
+									<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
+								</div>
+								<button type="button" class="btn btn-primary">Sign up</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					  <!-- Default panel contents -->
+							<div class="panel-heading"><h1>WELCOM HUMAIN OR NOT!!!</h1></div>
+								  <div class="panel-body">
+									
+									<p>Le but de ce projet est de développer un Role Playing Game (RPG) jouable à la fois sur un écran et à l'aide d'un Oculus Rift.</p>
+									<p>Actuellement, l'oculus rift est un dispositif émergeant permettant une immersion visuelle du joueur beaucoup plus importante qu'avec un simple écran. C'est dans ce cadre que nous désirons développer le premier RPG sur oculus rift, sachant que le style de jeu RPG vise à toujours être le plus immersif possible.</p>
+									<p> La combinaison d'un casque et d'un oculus rift offre une immersion quasi total dont on commence à percevoir le potentiel dans des démos de jeux d'horreur déjà développés.</p>
+									<h2>HOW DID THIS HAPPEN???</h2>
+									<p>Dans notre société, le jeu vidéo prend une place de plus en plus importante et son marché, grâce aux évolutions technologiques, est en perpétuelle évolution.</p>
+									<p>Les joueurs d'aujourd'hui recherchent de nouvelles expériences offrant une immersion toujours plus importante.</p>
+									<p>Notre projet a pour but d'offrir aux joueurs une manière de jouer attendue depuis longtemps, sur un genre de jeux qui n'a plus à faire ses preuves.</p>
+									<p>Le but de ce projet est de développer un Role Playing Game (RPG) jouable à la fois sur un écran et à l'aide d'un Oculus Rift.</p>
+									<p>Actuellement, l'oculus rift est un dispositif émergeant permettant une immersion visuelle du joueur beaucoup plus importante qu'avec un simple écran. C'est dans ce cadre que nous désirons développer le premier RPG sur oculus rift, sachant que le style de jeu RPG vise à toujours être le plus immersif possible.</p>
+									<p> La combinaison d'un casque et d'un oculus rift offre une immersion quasi total dont on commence à percevoir le potentiel dans des démos de jeux d'horreur déjà développés.</p>
+									<h2>Description de l'équipe:</h2>
+									<p>Notre équipe de travail est constituée de 9 personnes : 5 développeurs de Telecom Saint-Étienne ainsi que d'un graphiste-scénariste (UJM-Arts plastiques), d'un modélisateur(UJM-Arts plastiques), un animateur 3D, et un ingénieur son. </p>
+									<p>Arnaud GIBERT (chef de projet)</p>
+									<p>Saad Eddine GOUHMID</p>
+									<p>Quentin CHAPPEL</p>
+									<p>Faisal BIN DOS</p>
+									<p>Safwane TOKO</p>
+							  </div>
+			<footer>
+				<div id="social media">
+					<img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" />
+				</div>
+			</footer>
+		<!-- BOOTSTRAP -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
+	</body>
+</html>	
