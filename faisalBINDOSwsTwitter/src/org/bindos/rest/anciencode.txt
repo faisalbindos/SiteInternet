@@ -1,0 +1,87 @@
+	/*------------------------Code Block Number 1-----------------------*/
+		
+		OAuthService service = new ServiceBuilder().provider(TwitterApi.SSL.class).apiKey("XqFfYv10yTHujuG7xWIJIhibC").apiSecret("tVe6O4Y6XZj0QseSqPa9NdztFUV8ytykIGAZgykdMaaVqkyfwg").build();
+		Token requestToken = service.getRequestToken();
+		Token accessToken= new Token("286183022-utrJWAyRy3ZtAFSyfvC9Pruw96sTO9193vXQ56dJ", "yfKN8TqX7Wg4DXjl6C4BhrHCSsKNlLa9aaReJRgXR5bBZ");
+		JSONParser parser = new JSONParser();
+		
+		/*------------------------Code Block Number 2-----------------------*/
+		OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.twitter.com/1.1/friends/list.json?");
+		service.signRequest(accessToken, request);
+		Response response = request.send();
+		//System.out.println(response.getBody());
+		//Response responseGet = request.send();
+		Object objetNormal = parser.parse(response.getBody());
+		//System.out.println(objetNormal);
+	
+	
+		/*------------------------Code Block Number 3-----------------------*/
+		JSONObject jsonObject = (JSONObject)objetNormal;
+		JSONArray array = (JSONArray) jsonObject.get("users");
+	
+		/*------------------------Code Block Number 4-----------------------*/
+		//System.out.println("PARSE JSON");
+		for (int i = 0; i < array.size(); i++) {
+			JSONObject arrayObject = (JSONObject)array.get(i);
+			//System.out.println(arrayObject.get("id_str") + " + " + arrayObject.get("name") + " + " + arrayObject.get("screen_name")+ " + " + arrayObject.get("followers_count")+ " + " + arrayObject.get("friends_count")+ " + " + arrayObject.get("created_at")+ " + " + arrayObject.get("time_zone") );
+		}
+	
+
+		/*------------------------Question 2 -----------------------*/
+		OAuthService service2 = new ServiceBuilder().provider(TwitterApi.SSL.class).apiKey("XqFfYv10yTHujuG7xWIJIhibC").apiSecret("tVe6O4Y6XZj0QseSqPa9NdztFUV8ytykIGAZgykdMaaVqkyfwg").build();
+		Token requestToken2 = service2.getRequestToken();
+		Token accessToken2= new Token("286183022-utrJWAyRy3ZtAFSyfvC9Pruw96sTO9193vXQ56dJ", "yfKN8TqX7Wg4DXjl6C4BhrHCSsKNlLa9aaReJRgXR5bBZ");
+		//JSONParser parser2 = new JSONParser();
+		
+		OAuthRequest request2 = new OAuthRequest(Verb.GET, "https://api.twitter.com/1.1/followers/list.json?cursor=-1&screen_name=faisalbindos&skip_status=true&include_user_entities=false");
+		service2.signRequest(accessToken2, request2);
+		Response response2 = request2.send();
+		//System.out.println(response2.getBody());
+	
+		Object objetNormal2 = parser2.parse(response2.getBody());
+		//System.out.println(objetNormal2);
+		/*------------------------Code Block Number 3-----------------------*/
+		JSONObject jsonObject2 = (JSONObject)objetNormal2;
+		JSONArray array2 = (JSONArray) jsonObject2.get("users");
+	
+		/*------------------------Code Block Number 4-----------------------*/
+
+		for (int i = 0; i < array2.size(); i++) {
+			JSONObject arrayObject2 = (JSONObject)array2.get(i);
+			//System.out.println(arrayObject2.get("id_str") + " + " + arrayObject2.get("name") + " + " + arrayObject2.get("screen_name")+ " + " + arrayObject2.get("followers_count")+ " + " + arrayObject2.get("friends_count")+ " + " + arrayObject2.get("created_at")+ " + " + arrayObject2.get("time_zone") );
+		}
+		
+		/*------------------------Question 3 -----------------------*/
+OAuthRequest requestfriendslist = new OAuthRequest(Verb.GET, "https://api.twitter.com/1.1/friends/list.json?cursor=-1&screen_name=faisalbindos&skip_status=true&include_user_entities=false");
+		
+		service.signRequest(accessToken, requestfriendslist);
+		Response responsefriendslist = requestfriendslist.send();
+		
+		//System.out.println("responsefriends : "+responsefriendslist.getBody());
+		
+		
+		JSONParser parser3 = new JSONParser();
+		Object objetNormal3 = parser3.parse(response3);
+
+		JSONObject jsonObjectf3 = (JSONObject)objetNormal3;
+		JSONArray array3 =  (JSONArray) jsonObject3.get("users");
+		
+		int followersnumber=0;
+		
+		Double average ;
+		
+		//System.out.println("liste friends "+array3.size());
+		
+		for (int i = 0; i < array3.size(); i++) {
+
+			JSONObject arrayObjectlist = (JSONObject)arraylist.get(i);
+			followersnumber= followersnumber + Integer.parseInt(arrayObjectlist.get("followers_count").toString());
+			
+		}
+		average = (double) (followersnumber/array3.size());
+		//System.out.println("average of followers : "+average);
+
+	}
+
+	
+

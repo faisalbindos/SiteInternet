@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\user\Desktop\FI3\XML Web Services\TDs\faisalBINDOSwsTwitter\.metadata\.plugins\org.eclipse.jdt.core
+4260111049.index
